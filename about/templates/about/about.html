@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About me{% endblock %}
+
+{% block page_content %}
+  <div class="about">
+    <h1>About me</h1>
+  </div>
+  <div class="general-info">
+    <div class="general-info__profile-picture-block">
+      <img class="general-info__profile-picture-img" src="{% static 'img/profile-picture.jpg' %}" alt="profile picture">
+    </div>
+    <div class="general-info__characteristics">
+      <ul class="general-info__characteristics-list">
+        <li>
+          <p>Name: Philipp Vinokurov</p>
+        </li>
+        <li>
+          <p>Age: 19</p>
+        </li>
+        <li>
+          <p>Phone number: <a href="tel:+79160014626">+79160014626</a></p>
+        </li>
+        <li>
+          <p>Mail: <a href="mailto:vinokurov.filipp1@yandex.ru">vinokurov.filipp1@yandex.ru</a></p>
+        </li>
+        <li>
+          <p><a href="https://github.com/Wesson1337">Github</a></p>
+        </li>
+        <li>
+          <p><a href="{% static 'files/resume.pdf' %}" download>Resume</a></p>
+        </li>
+        <li>
+          <p><a href="#">LinkedIn</a></p>
+        </li>
+        <li>
+          <p>Stack: Python, HTML, CSS, Django, PosgreSQL</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}
